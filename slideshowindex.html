@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial scale=1.0" >
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>A Simple Slideshow</title>  
+        <style>
+            body{
+                text-align: center;
+                background-color:#5964C8;
+            }
+        </style>
+    </head>
+    <body>
+            <h2>A Simple Slideshow</h2>
+            <script>
+                    var i=0;
+                    var images=[];
+                    var time=2200;
+                    images[0]='slideshowimage0.jpg';
+                    images[1]='slideshowimage1.jpg';
+                    images[2]='slideshowimage2.jpg';
+                    images[3]='slideshowimage3.jpg';
+                    images[4]='slideshowimage4.jpg';
+                     function changeImage(){
+                    document.slide.src=images[i];
+                    if(i<images.length-1)
+                    {
+                    i++;
+                    }
+                    else
+                    {
+                    i=0;
+                    }
+                    setTimeout("changeImage()",time);
+                    }
+                    window.onload=changeImage;
+                    
+                </script>
+                <img name="slide" width="400" hheight="200>"﻿
+                <br>
+                <h3>Enjoy :)</h3>
+    </body>
+</html>
